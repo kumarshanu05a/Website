@@ -1,76 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Front-end Developer</title>
-  <link rel="stylesheet" href="front.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>E-Commerce Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        .navbar {
+            font-family:Arial, Helvetica, sans-serif ;
+            font: weight 4px;;
+            background-color: #8c0808;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .nav-links a:hover {
+    color: #00ff2f;
+}
+
+        .logo a {
+            color: #ffffff;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .nav-links ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Product section styles */
+        .products {
+            /* border: 5px solid re
+            d; */
+            width:1300px;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
+
 <body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="image9.png"> <i>Product Store</i></a>
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="contectPge.html" target="_self">Contact</a></li>
+                <li><a href="loginPage.html" target="_self">Login</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <header>
-    <div class="container">
-      <h1>Your Name</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About Me</a></li></ul>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="products">
+        <div class="product">
+            <img src="cam.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="img2.jpeg" alt="Product 1" style="height:20px" width="30px">
+            <h3>Product 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="img1.jpeg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="cam.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Add to Cart</button>
+        </div>
     </div>
-  </header>
-
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>[Insert a brief introduction about yourself, your passion for front-end development, and any relevant experiences or achievements.]</p>
+    <div class="products">
+        <div class="product">
+            <img src="image6.avif" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="image7.avif" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="img5.avif" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="img4.jpeg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Add to Cart</button>
+        </div>
+        
+        <!-- Repeat similar structure for other products -->
     </div>
-  </section>
 
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Project 1: Project Name</h3>
-        <p>Description: [Brief description of the project]</p>
-        <p>Technologies Used: [List of technologies used]</p>
-        <p>Link: <a href="#">[Link to the project/demo]</a></p>
-        <p>GitHub Repo: <a href="#">[Link to the GitHub repository]</a></p>
-      </div>
-      <!-- Repeat the above section for each project you want to showcase -->
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <ul>
-        <li>Programming Languages: HTML, CSS, JavaScript</li>
-        <li>Frameworks/Libraries: React, Vue.js, Bootstrap</li>
-        <li>Tools: Git, VS Code, Adobe XD</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <ul>
-        <li>Email: [Your email address]</li>
-        <li>LinkedIn: <a href="#">[Link to your LinkedIn profile]</a></li>
-        <li>GitHub: <a href="#">[Link to your GitHub profile]</a></li>
-        <li>Website: <a href="#">[Optional - Link to your personal website]</a></li>
-      </ul>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </div>
-  </footer>
-
+    <footer class="footer">
+        <p>&copy; 2023 E-Shop. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
