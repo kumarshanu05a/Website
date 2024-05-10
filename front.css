@@ -1,0 +1,86 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+
+  }
+  
+  
+  header {
+    
+    background: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: row-reverse;
+
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display:flex
+  }
+  
+  nav ul li {
+    display: block;
+
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+  section {
+    padding: 40px 0;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .project {
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 0.8rem;
+  }
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+a:hover{
+  background-color: red;
+}
